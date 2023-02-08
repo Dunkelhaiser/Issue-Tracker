@@ -25,7 +25,6 @@ const issueTemplate = (issue: Issue) => {
                     </div>
                 </div>
                 <div class="flex-row">
-                    <button class="close" type="button">Close</button>
                     <button class="delete" type="button">Delete</button>
                 </div>
             </div>`;
