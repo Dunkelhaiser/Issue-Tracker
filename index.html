@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+        <link rel="stylesheet" href="/src/css/main.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Issue Tracker" />
+        <title>Issue Tracker</title>
+    </head>
+    <body>
+        <main>
+            <div class="container">
+                <h1>New Issue:</h1>
+                <form id="issue-form">
+                    <input type="text" id="issue-desc" placeholder="Describe the issue..." aria-label="Description" />
+                    <select id="issue-secerity" aria-label="Severity">
+                        <option value="Low">Low</option>
+                        <option value="Medium">Medium</option>
+                        <option value="High">High</option>
+                    </select>
+                    <input type="text" id="issue-assigned" placeholder="Assigned to..." aria-label="Assigned To" />
+                    <button type="submit">Add</button>
+                </form>
+            </div>
+            <section class="issues-section">
+                <!-- <div class="container">
+                    <div class="flex">
+                        <h2>New Issue:</h2>
+                        <span id="id">Issue ID: 21413412412</span>
+                        <div class="flex-row">
+                            <span class="severity medium">Medium</span>
+                            <span>Wilhelm</span>
+                        </div>
+                    </div>
+                    <div class="flex-row">
+                        <button id="close" type="button">Close</button>
+                        <button id="delete" type="button">Delete</button>
+                    </div>
+                </div> -->
+            </section>
+        </main>
+    </body>
+</html>

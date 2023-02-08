@@ -1,0 +1,41 @@
+@mixin respond-phone {
+    @media (max-width: 600px) {
+        @content;
+    }
+}
+
+@mixin respond-tablet {
+    @media (max-width: 900px) {
+        @content;
+    }
+}
+
+@mixin respond-tablet-landscape {
+    @media (max-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin respond-pc-large {
+    @media (min-width: 1800px) {
+        @content;
+    }
+}
+
+@mixin grid($collumns, $gap) {
+    display: grid;
+    grid-template-columns: repeat($collumns, 1fr);
+    grid-template-rows: auto;
+    gap: $gap;
+}
+
+@mixin flex($direction, $justify, $align, $content, $gap, $wrap) {
+    display: flex;
+    flex-direction: $direction;
+    /* stylelint-disable-next-line declaration-block-no-redundant-longhand-properties */
+    flex-wrap: $wrap;
+    gap: $gap;
+    align-content: $content;
+    align-items: $align;
+    justify-content: $justify;
+}

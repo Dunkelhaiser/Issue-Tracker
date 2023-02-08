@@ -1,0 +1,56 @@
+.container {
+    @include flex(column, flex-start, flex-start, flex-start, 2rem, nowrap);
+
+    @include respond-phone {
+        width: 90vw;
+        margin: 0;
+    }
+
+    width: 50vw;
+    margin: 0 5rem;
+    padding: 4rem;
+
+    background-color: $light-foreground;
+    border-radius: 2em;
+    box-shadow: $light-shadow 0 8px 24px;
+
+    h1 {
+        font-size: 2.8rem;
+    }
+
+    h2 {
+        font-size: 2.4rem;
+    }
+
+    span {
+        font-size: 1.4rem;
+        color: $light-text-light;
+    }
+
+    span[id="id"] {
+        font-size: 1.2rem;
+    }
+}
+
+.severity:is(span) {
+    display: inline-block;
+
+    padding: 1rem;
+
+    font-size: 1.4rem;
+    color: $light-foreground;
+
+    border-radius: 1em;
+}
+
+.medium {
+    background-color: $light-yellow;
+}
+
+.low {
+    background-color: $light-green;
+}
+
+.high {
+    background-color: $light-red;
+}

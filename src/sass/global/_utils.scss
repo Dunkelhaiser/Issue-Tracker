@@ -1,0 +1,17 @@
+.flex {
+    @include flex(column, flex-start, flex-start, flex-start, 1rem, nowrap);
+
+    width: 100%;
+    height: 100%;
+}
+
+.flex-row {
+    @include flex(row, flex-start, center, flex-start, 3rem, nowrap);
+
+    width: 100%;
+    height: 100%;
+}
+
+.hidden {
+    display: none !important;
+}

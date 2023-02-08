@@ -1,0 +1,33 @@
+button {
+    @include hover;
+
+    cursor: pointer;
+
+    width: 100%;
+    padding: 1.4em 1.07em;
+
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: $light-foreground;
+
+    background-color: $light-blue;
+    border-color: $light-blue-dark;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 0.35em;
+    outline-color: $light-blue-dark;
+
+    &:hover {
+        background-color: $light-blue-light;
+    }
+
+    &:active {
+        background-color: $light-blue-dark;
+    }
+}
+
+#delete {
+    background-color: $light-red;
+    border-color: $light-red-dark;
+    outline-color: $light-red-dark;
+}
