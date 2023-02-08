@@ -26,8 +26,16 @@ button {
     }
 }
 
-#delete {
+.delete {
     background-color: $light-red;
     border-color: $light-red-dark;
     outline-color: $light-red-dark;
+
+    &:hover {
+        background-color: $light-red-light;
+    }
+
+    &:active {
+        background-color: $light-red-dark;
+    }
 }
